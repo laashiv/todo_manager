@@ -48,6 +48,10 @@ body {
   border-radius: 4px;
 }
 
+.Todo-Strike {
+  text-decoration: line-through;
+}
+
 .TodoSection {
   margin-bottom: 32px;
 }
