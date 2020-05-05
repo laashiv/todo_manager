@@ -14,7 +14,7 @@
         <div class="TodoItem-container">
           <%= form_with(url: "/todos/#{todo.id}", method: "put") do %>
             <input class="TodoItem-checkbox" name="completed" type="checkbox" <%= todo.completed ? "checked" : " " %> onclick="this.form.submit()" />
-          <% end %>
+          <% end%>
 
           <p class= '<%= todo.completed ? "Todo-Strike" : "" %>' >
             <%= todo.todo_text %>
@@ -24,7 +24,11 @@
             <p class="TodoItem-dueDate"><%= todo.due_date.to_s(:short) %></p>
           <% end %>
           
-          <img class="TodoItem-delete" src="delete.svg" />
+          <a href="javascript:void(0)" class="TodoItem-delete">
+            <%= form_with(url: "/todos/#{todo.id}", method: "delete") do %>
+              <input type="image" src="delete.svg">
+            <% end %>
+          </a>
         </div>
       </li>
     <%end%>
