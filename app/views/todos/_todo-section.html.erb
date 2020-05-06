@@ -26,12 +26,12 @@
           
           <a href="javascript:void(0)" class="TodoItem-delete">
             <%= form_with(url: "/todos/#{todo.id}", method: "delete") do %>
-              <%= image_submit_tag("delete.svg") %>
+              <%= image_submit_tag("https://cdn3.vectorstock.com/i/1000x1000/74/57/the-trashcan-icon-dustbin-symbol-flat-vector-6547457.jpg", class: "binimage") %>
             <% end %>
           </a>
         </div>
       </li>
-    <%end%>
-  
+    <% end %>
   </ul>
+
 </section>

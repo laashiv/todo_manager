@@ -30,6 +30,7 @@ body {
   border-radius: 4px;
   margin-right: 4px;
 }
+
 .AddTodo-text {
   padding: 6px 12px;
   font-size: 22px;
@@ -65,6 +66,7 @@ body {
   line-height: 1.4;
   color: #453c52;
 }
+
 .TodoSectionTitle-remainingCount {
   font-size: 24px;
   margin-left: 10px;
@@ -84,12 +86,14 @@ body {
   margin-left: 20px;
   margin-top: 7px;
 }
+
 .TodoItem-container {
   display: flex;
   align-items: stretch;
   margin-bottom: 36px;
   margin-left: 32px;
 }
+
 .TodoItem-checkbox {
   margin-right: 20px;
   transform: scale(1.8);
@@ -115,11 +119,19 @@ body {
 .TodoItem-delete > img {
   width: 16px;
 }
+
 .TodoItem-container:hover {
   background-color: #f1edf7;
 }
+
 .TodoItem-container:hover .TodoItem-delete {
   visibility: visible;
+}
+
+.binimage {
+  width: 25px;
+  border-radius: 100px;
+  color: black;
 }
 
 .UnorderedList {
